@@ -18,9 +18,9 @@ export interface CustomInputProps {
 export interface CustomButtonProps {
     onPress?: () => void;
     title?: string;
-    style?: string;
+    style?: object;
     leftIcon?: React.ReactNode;
-    textStyle?: string;
+    textStyle?: object;
     isLoading?: boolean;
 }
 export interface SignUpParams {

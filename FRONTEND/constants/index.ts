@@ -40,6 +40,8 @@ import pizzaOne from "@/assets/images/pizza-one.png";
 import salad from "@/assets/images/salad.png";
 import success from "@/assets/images/success.png";
 import tomatoes from "@/assets/images/tomatoes.png";
+import fullLogo from "@/assets/images/FullLogo.png"
+import halfLogo from "@/assets/images/HalfLogo.png"
 
 export const images = {
     avatar,
@@ -83,4 +85,7 @@ export const images = {
     star,
     trash,
     user,
+    fullLogo,
+    halfLogo
+
 };

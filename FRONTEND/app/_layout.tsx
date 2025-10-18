@@ -1,6 +1,9 @@
 import { SplashScreen, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
+
 
 import "./globals.css";
 
@@ -17,6 +20,11 @@ export default function RootLayout() {
     "Montserrat-Medium": require("../assets/fonts/Montserrat-Medium.ttf"),
     "Montserrat-Light": require("../assets/fonts/Montserrat-Light.ttf"),
     "Montserrat-ExtraBold": require("../assets/fonts/Montserrat-ExtraBold.ttf"),
+    "Poppins-Bold": require("../assets/fonts/Poppins-Bold.ttf"),
+    "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
+    "Poppins-Medium": require("../assets/fonts/Poppins-Medium.ttf"),
+    "Poppins-SemiBold": require("../assets/fonts/Poppins-SemiBold.ttf"),
+    "Poppins-Light": require("../assets/fonts/Poppins-Light.ttf"),
   });
 
   useEffect(() => {
@@ -24,5 +32,14 @@ export default function RootLayout() {
     if (fontsLoaded) SplashScreen.hideAsync();
   }, [fontsLoaded, error]);
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+  <SafeAreaProvider>
+      <StatusBar style="dark" />
+
+    <Stack screenOptions={{ headerShown: false }} />
+
+
+  </SafeAreaProvider>
+  
+)
 }
