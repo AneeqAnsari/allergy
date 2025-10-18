@@ -1,7 +1,7 @@
 import {View, Text, TextInput,StyleSheet} from 'react-native'
 import {CustomInputProps} from "../types";
 import {useState} from "react";
-import cn from "clsx";
+import {colors, fonts} from '@/constants/colors';
 
 const CustomInput = ({
     placeholder = 'Enter text',
@@ -16,7 +16,7 @@ const CustomInput = ({
 
     return (
         <View className="w-full">
-            <Text className="label">{label}</Text>
+            <Text style={styles.text}>{label}</Text>
 
             <TextInput
                 autoCapitalize="none"
@@ -28,24 +28,34 @@ const CustomInput = ({
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
                 placeholder={placeholder}
-                placeholderTextColor="#888"
-                className={cn('input', isFocused ? 'border-secondary' : 'border-gray-300')}
+                placeholderTextColor="#A3A3A3"
+                style={styles.input}
+                
             />
         </View>
     )
 }
 
-// const styles = StyleSheet.create({
-//     centerRow: {
-//         flexDirection: 'row',
-//         alignItems: 'center',
-//         justifyContent: 'center',
-//     },
-//     text: {
-//         color: '#fff',
-//         fontWeight: '600',
-//         // add more styles as needed
-//     }
-// });
+const styles = StyleSheet.create({
+  
+    text: {
+        color: colors.text,
+        fontSize: 16,
+        fontFamily:fonts.poppins,
+       
+    },
+    input: {
+        borderWidth: 1,
+        borderColor: '#E0E0E0',
+        padding: 10,
+        borderRadius: 5,
+        fontSize: 15,
+        marginTop: 5,
+        backgroundColor: 'white',
+        minWidth: '100%',
+         fontFamily:fonts.poppinsLight,
+
+    }
+});
 
 export default CustomInput

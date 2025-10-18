@@ -26,12 +26,14 @@ module.exports = {
         success: "#2F9B65",
       },
       fontFamily: {
-        quicksand: ["Quicksand-Regular", "sans-serif"],
+        quicksand: 
+        ["Quicksand-Regular", "sans-serif"],
         "quicksand-bold": ["Quicksand-Bold", "sans-serif"],
         "quicksand-semibold": ["Quicksand-SemiBold", "sans-serif"],
         "quicksand-light": ["Quicksand-Light", "sans-serif"],
         "quicksand-medium": ["Quicksand-Medium", "sans-serif"],
-        montserrat: ["Montserrat-Regular", "sans-serif"],
+        montserrat: 
+        ["Montserrat-Regular", "sans-serif"],
         "montserrat-bold": ["Montserrat-Bold", "sans-serif"],
         "montserrat-semibold": ["Montserrat-SemiBold", "sans-serif"],
         "montserrat-medium": ["Montserrat-Medium", "sans-serif"],
@@ -39,6 +41,12 @@ module.exports = {
         "montserrat-extrabold": ["Montserrat-ExtraBold", "sans-serif"],
         "montserrat-regular": ["Montserrat-Regular", "sans-serif"],
 
+        poppins: 
+        ["Poppins-Regular", "sans-serif"],
+        "poppins-bold": ["Poppins-Bold", "sans-serif"],
+        "poppins-semibold": ["Poppins-SemiBold", "sans-serif"],
+        "poppins-medium": ["Poppins-Medium", "sans-serif"],
+        "poppins-light": ["Poppins-Light", "sans-serif"],
       },
     },
   },
